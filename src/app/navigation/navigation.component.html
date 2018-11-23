@@ -1,0 +1,82 @@
+<nav id="tb-main-nav">
+
+    <div class="row">
+
+            <!-- 
+                col-    : < 576px width monitor 
+                col-sm- : > 576px
+                col-md- : > 768px
+                col-lg  : > 992px
+                col-xl  : > 1200px
+            -->
+
+            <div class="col-3 bg-primary tb-navbox text-center">
+                <a href="#">
+                    <!-- Oversikt -->
+                    <i class="fas fa-2x fa-chart-line"></i>
+                </a>
+            </div>
+
+            <div class="col-3 bg-success tb-navbox text-center">
+                <a href="#">
+                    <!-- Stempling -->
+                    <i class="fas fa-2x fa-clock"></i>
+                </a>
+            </div>
+            
+            <div class="col-3 bg-danger tb-navbox text-center">
+                <a href="#">
+                    <!-- Prosjekter -->
+                    <i class="fas fa-2x fa-file-alt"></i>
+                </a>
+            </div>
+            
+            <div ngbDropdown class="col-3 bg-warning tb-navbox text-center">
+                <a id="dropdownNav1" ngbDropdownToggle>
+                    <!-- Flere valg -->
+                    <i class="fas fa-2x fa-toolbox"></i>
+                </a>
+                <div ngbDropdownMenu placement="bottom-left">
+                    <button class="dropdown-item">Rapporter</button>
+                    <button class="dropdown-item">Firma</button>
+                    <button class="dropdown-item">Innstillinger</button>
+                    <button class="dropdown-item">Logg ut</button>
+                </div>
+            </div>
+            
+    </div> <!-- end row -->
+
+</nav>
+
+
+<!-- 
+    
+<div ngbDropdown class="col-3 bg-warning text-white tb-navbox text-center">
+    <a id="dropdownNav1" ngbDropdownToggle>
+        Flere valg
+    </a>
+    <div ngbDropdownMenu>
+        <button class="dropdown-item">Rapporter</button>
+        <button class="dropdown-item">Firma</button>
+        <button class="dropdown-item">Innstillinger</button>
+        <button class="dropdown-item">Logg ut</button>
+    </div>
+</div> 
+
+-->
+
+
+<!-- <br><br><br> -->
+
+<!-- 
+<div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Action - 1</button>
+        <button class="dropdown-item">Another Action</button>
+        <button class="dropdown-item">Something else is here</button>
+      </div>
+    </div>
+  </div> -->
