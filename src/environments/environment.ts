@@ -3,8 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  version: require('../../package.json').version
+    production: false,
+    version: require('../../package.json').version,
+    codename: 'alpha'
 };
 
 /*

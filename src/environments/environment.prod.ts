@@ -1,4 +1,5 @@
 export const environment = {
-  production: true,
-  version: require('../../package.json').version
+    production: true,
+    version: require('../../package.json').version,
+    codename: 'alpha'
 };
