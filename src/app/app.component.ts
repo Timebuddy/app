@@ -12,6 +12,7 @@ import { Title } from '@angular/platform-browser';
 export class AppComponent {
     title = 'Timebuddy';
     version = environment.version;
+    codename = environment.codename;
 
     public constructor(private titleService: Title) { }
 

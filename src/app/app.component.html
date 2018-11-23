@@ -1,35 +1,70 @@
-{{ setTitle('Timebuddy - Oversikt') }}
-
 <app-navigation></app-navigation>
 
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1 class="text-primary">
-    {{ title }} v{{ version }}
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container-fluid text-center my-4">
+    <h1>{{ title }} <small class="text-muted">{{codename}}</small></h1>
+    
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<p>
-    Select a title to set on the current HTML document:
-  </p>
- 
-  <ul>
-    <li><a (click)="setTitle( 'Good morning!' )">Good morning</a>.</li>
-    <li><a (click)="setTitle( 'Good afternoon!' )">Good afternoon</a>.</li>
-    <li><a (click)="setTitle( 'Good evening!' )">Good evening</a>.</li>
-  </ul>
+<div class="container-fluid">
+
+        <div class="card-group">
+
+            <div class="card">
+                <h3 class="card-header text-white bg-primary">Status</h3>
+                <div class="card-body">
+                    <p class="card-text">Ikke innstemplet</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-header text-white bg-primary">Prosjekter</h3>
+                <div class="card-body">
+                    <table class="table">
+                        <tr><td>Enebolig Kjæråsen</td><td>tag1, tag2, tag3</td></tr>
+                        <tr><td>Pengebingen oppussing, McDuck</td><td>tag1, tag2, tag3</td></tr>
+                        <tr><td>Fiks garasje hos Olsen</td><td>tag1, tag2, tag3</td></tr>
+                    </table>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-header text-white bg-primary">Lisens</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Premium</h5>
+                    <p class="card-text">Lisenstype: Premium Grandfathered</p>
+                    <p class="card-text"><small class="text-muted">Utløper: Aldri</small></p>
+                    <p class="card-text"><small class="text-muted">Grandfathered betyr at du beholder samme pris selv om Timebuddy øker lisenskostnaden</small></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-header text-white bg-primary">Siste stemplinger</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Enebolig Kjæråsen</h5>
+                    <table class="table">
+                        <tr><td>23.11.2018</td><td>07:16</td><td>16:02</td></tr>
+                        <tr><td>22.11.2018</td><td>11:32</td><td>15:48</td></tr>
+                        <tr><td>22.11.2018</td><td>07:05</td><td>11:05</td></tr>
+                    </table>
+                    <h5 class="card-title">Fiks garasje hos Olsen</h5>
+                    <table class="table">
+                        <tr><td>15.11.2018</td><td>09:22</td><td>13:42</td></tr>
+                        <tr><td>16.11.2018</td><td>06:57</td><td>14:55</td></tr>
+                        <tr><td>17.11.2018</td><td>07:12</td><td>14:43</td></tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    
+</div>
+
 
 <router-outlet></router-outlet>
+
+{{ setTitle("Timebuddy - Oversikt") }}
