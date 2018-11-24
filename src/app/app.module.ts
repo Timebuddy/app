@@ -5,13 +5,13 @@ import { AppComponent } from './app.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationComponent } from './navigation/navigation.component';
-import { TimetrackingComponent } from './timetracking/timetracking.component';
+import { TimetrackingListComponent } from './timetracking-list/timetracking-list.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavigationComponent,
-        TimetrackingComponent
+        TimetrackingListComponent
     ],
     imports: [
         BrowserModule,
