@@ -29,3 +29,15 @@
     width:300px;
     padding-left:-250px;
 }
+
+.bg-timebuddy-purple {
+    /* background-color: #64417E; */
+    color: #64417E;
+    border-bottom:1px solid #64416E;
+}
+.bg-timebuddy-purple a {
+    color: #64417E;
+}
+.bg-timebuddy-purple a:hover {
+    color:#94417E;
+}

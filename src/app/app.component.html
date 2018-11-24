@@ -1,41 +1,32 @@
 <app-navigation></app-navigation>
 
-<div class="container-fluid text-center my-4">
-    <h1>{{ title }} <small class="text-muted">{{codename}}</small></h1>
-    
+<app-timetracking-list></app-timetracking-list>
+
+<div class="container my-4">
+    <div class="card">
+        <h3 class="card-header text-white bg-danger">Status</h3>
+        <p class="card-body text-danger">Ikke innstemplet</p>
+    </div>
 </div>
 
-<div class="container-fluid">
+<div class="container my-4">
 
         <div class="card-group">
 
             <div class="card">
-                <h3 class="card-header text-white bg-primary">Status</h3>
-                <div class="card-body">
-                    <p class="card-text">Ikke innstemplet</p>
-                </div>
-            </div>
-
-            <div class="card">
                 <h3 class="card-header text-white bg-primary">Prosjekter</h3>
                 <div class="card-body">
-                    <table class="table">
-                        <tr><td>Enebolig Kjæråsen</td><td>tag1, tag2, tag3</td></tr>
-                        <tr><td>Pengebingen oppussing, McDuck</td><td>tag1, tag2, tag3</td></tr>
-                        <tr><td>Fiks garasje hos Olsen</td><td>tag1, tag2, tag3</td></tr>
-                    </table>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-header text-white bg-primary">Lisens</h3>
-                <div class="card-body">
-                    <h5 class="card-title">Premium</h5>
-                    <p class="card-text">Lisenstype: Premium Grandfathered</p>
-                    <p class="card-text"><small class="text-muted">Utløper: Aldri</small></p>
-                    <p class="card-text"><small class="text-muted">Grandfathered betyr at du beholder samme pris selv om Timebuddy øker lisenskostnaden</small></p>
+                    <p class="lead">Enebolig Kjæråsen</p>
+                    <p>tag1, tag2, tag3</p>
+                    <p class="text-primary">Pågående</p>
+                    <hr>
+                    <p class="lead">Pengebingen oppussing, McDuck</p>
+                    <p>tag1, tag2, tag3</p>
+                    <p class="text-warning">Ikke påbegynt</p>
+                    <hr>
+                    <p class="lead">Fiks garasje hos Olsen</p>
+                    <p>tag1, tag2, tag3</p>
+                    <p class="text-success">Fakturert</p>
                 </div>
             </div>
 
@@ -43,13 +34,14 @@
                 <h3 class="card-header text-white bg-primary">Siste stemplinger</h3>
                 <div class="card-body">
                     <h5 class="card-title">Enebolig Kjæråsen</h5>
-                    <table class="table">
+                    <table class="table table-borderless table-sm">
                         <tr><td>23.11.2018</td><td>07:16</td><td>16:02</td></tr>
                         <tr><td>22.11.2018</td><td>11:32</td><td>15:48</td></tr>
                         <tr><td>22.11.2018</td><td>07:05</td><td>11:05</td></tr>
                     </table>
+                    <hr>
                     <h5 class="card-title">Fiks garasje hos Olsen</h5>
-                    <table class="table">
+                    <table class="table table-borderless table-sm">
                         <tr><td>15.11.2018</td><td>09:22</td><td>13:42</td></tr>
                         <tr><td>16.11.2018</td><td>06:57</td><td>14:55</td></tr>
                         <tr><td>17.11.2018</td><td>07:12</td><td>14:43</td></tr>
@@ -59,10 +51,53 @@
 
         </div>
 
-
-
-    
 </div>
+
+<div class="container my-4">
+
+    <div class="card-group">
+
+        <div class="card">
+            <h3 class="card-header text-white bg-primary">Nyheter</h3>
+            <div class="card-body">
+                <p class="lead">Velkommen til Timebuddy v0.0.1</p>
+                <p>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+                <hr>
+                <p class="lead">Velkommen til Timebuddy v0.0.1</p>
+                <p>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+                <hr>
+                <p class="lead">Velkommen til Timebuddy v0.0.1</p>
+                <p>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+                <hr>
+                <p class="lead">Velkommen til Timebuddy v0.0.1</p>
+                <p>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+                <hr>
+                <p class="lead">Velkommen til Timebuddy v0.0.1</p>
+                <p>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card-header text-white bg-primary">Lisens</h3>
+            <div class="card-body">
+                <h5 class="card-title">Premium</h5>
+                <p class="card-text">Lisenstype: Premium Grandfathered</p>
+                <p class="card-text"><small class="text-muted">Utløper: Aldri</small></p>
+                <p class="card-text"><small class="text-muted">Grandfathered betyr at du beholder samme pris selv om Timebuddy øker lisenskostnaden</small></p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="container-fluid text-center my-4">
+    <!-- <h1>{{ title }} <small class="text-muted">{{codename}}</small></h1> -->
+    <img src="../assets/logo_lilla.png" style="width:20%;" title="{{title}} {{codename}}">
+</div>
+
+
 
 
 <router-outlet></router-outlet>
