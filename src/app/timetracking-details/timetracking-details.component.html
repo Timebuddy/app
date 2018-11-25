@@ -1,0 +1,14 @@
+<div *ngIf="timetrack">
+
+    <p>ID: {{ timetrack.id }}</p>
+
+    <label>Note: <input class="form-control" [(ngModel)]="timetrack.note" placeholder="Notat..."></label>
+
+    <button class="btn btn-default btn-sm mx-2 my-2" (click)="exitDetailsView()">Lukk</button>
+
+</div>
+
+
+<div class="text-center lead">
+  Status: {{ null }}
+</div>

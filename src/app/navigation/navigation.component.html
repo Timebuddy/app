@@ -1,6 +1,6 @@
 <nav id="tb-main-nav">
 
-    <div class="row">
+    <!-- <div class="row"> -->
 
             <!-- 
                 col-    : < 576px width monitor 
@@ -10,40 +10,43 @@
                 col-xl  : > 1200px
             -->
 
-            <div class="col-3 bg-timebuddy-purple tb-navbox text-center">
-                <a href="#">
+            <!-- <div class="col-3 bg-timebuddy-purple tb-navbox text-center"> -->
+            <div class="col-3 bg-tbpurple text-white tb-navbox text-center">
+                <a routerLink="/">
                     <!-- Oversikt -->
-                    <i class="fas fa-2x fa-chart-line" title="Oversikt"></i>
+                    <i class="fas fa-3x fa-chart-line" title="Oversikt"></i><br><small>Oversikt</small>
                 </a>
             </div>
 
-            <div class="col-3 bg-timebuddy-purple tb-navbox text-center">
-                <a href="#">
+            <!-- <div class="col-3 bg-timebuddy-purple tb-navbox text-center"> -->
+            <div class="col-3 bg-tbpurple text-white tb-navbox text-center">
+                <a routerLink="/tidsstempling">
                     <!-- Stempling -->
-                    <i class="fas fa-2x fa-clock" title="Tidsstempling"></i>
+                    <i class="fas fa-3x fa-clock" title="Tidsstempling"></i><br><small>Tidsstempling</small>
                 </a>
             </div>
             
-            <div class="col-3 bg-timebuddy-purple tb-navbox text-center">
-                <a href="#">
+            <!-- <div class="col-3 bg-timebuddy-purple tb-navbox text-center"> -->
+            <div class="col-3 bg-tbpurple text-white tb-navbox text-center">
+                <a routerLink="/prosjekter">
                     <!-- Prosjekter -->
-                    <i class="fas fa-2x fa-file-alt" title="Prosjekter"></i>
+                    <i class="fas fa-3x fa-folder-open" title="Prosjekter"></i><br><small>Prosjekter</small>
                 </a>
             </div>
             
-            <div ngbDropdown class="col-3 bg-timebuddy-purple tb-navbox text-center">
+            <div ngbDropdown class="col-3 bg-tbpurple text-white tb-navbox text-center">
                 <a id="dropdownNav1" ngbDropdownToggle>
                     <!-- Flere valg -->
-                    <i class="fas fa-2x fa-toolbox" title="Flere valg"></i>
+                    <i class="fas fa-3x fa-toolbox" title="Flere valg"></i><br><small>Valg</small>
                 </a>
                 <div ngbDropdownMenu>
-                    <button class="dropdown-item">Rapporter</button>
-                    <button class="dropdown-item">Firma</button>
-                    <button class="dropdown-item">Innstillinger</button>
-                    <button class="dropdown-item">Logg ut</button>
+                    <a routerLink="/timeliste"><button class="dropdown-item">Rapporter</button></a>
+                    <a routerLink="/firma"><button class="dropdown-item">Firma</button></a>
+                    <a routerLink="/innstillinger"><button class="dropdown-item">Innstillinger</button></a>
+                    <a routerLink="/loggut"><button class="dropdown-item">Logg ut</button></a>
                 </div>
             </div>
             
-    </div> <!-- end row -->
+    <!-- </div> -->
 
 </nav>

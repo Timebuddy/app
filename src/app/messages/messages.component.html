@@ -1,0 +1,8 @@
+<div *ngIf="messageService.messages.length">
+  <h2>Meldinger</h2>
+  <button class="btn btn-sm btn-danger"
+  (click)="messageService.clear()">Fjern</button>
+  <div *ngFor="let message of messageService.messages">
+    {{ message }}
+  </div>
+</div>

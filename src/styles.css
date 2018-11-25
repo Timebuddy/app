@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*
+.bg-primary {
+    background:#686de0 !important;
+}
+
+.bg-success {
+    background:#badc58 !important;
+}
+
+.bg-danger {
+    background:#ff7979 !important;
+}
+
+.bg-warning {
+    background:#f6e58d !important;
+}
+
+.bg-info {
+    background:#c7ecee !important;
+}
+*/
+
+.bg-tbpurple {
+    background:#686de0 !important;
+}
+.bg-tbpurple-dark {
+    background:#686de0;
+}
+
+.bg-tbgradient {
+    background:#f9f9f9;
+    
+}
+
+.text-tbpurple {
+    color:#686de0;
+}

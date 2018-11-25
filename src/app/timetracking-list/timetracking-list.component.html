@@ -1,7 +1,31 @@
+
+
 <div class="container my-4">
-    <div class="card">
-        <h3 class="card-header text-white bg-danger">Tidsstempling (app-timetracking-list)</h3>
-        <p class="lead">Ser på følgende timetracking :<br>{{ timetrackingid }}</p>
-        <p class="card-body text-danger">Ikke innstemplet</p>
+
+    <div class="alert alert-warning text-center lead">Du er ikke stemplet inn</div>
+
+    <!-- fjerner kobling mot app-timetracking-details, fikse routing for TimetrackingDetailsComponent -->
+    <!-- <app-timetracking-details [timetrack]="selectedTimetrack"></app-timetracking-details> -->
+
+    <div class="list-group">
+        <a routerLink="/tidsstempling/{{timetrack.id}}"
+        class="list-group-item list-group-item-action" 
+        *ngFor="let timetrack of timetrackinglist">
+            {{ timetrack.note }} <span class="badge badge-primary float-right">{{ timetrack.id }}</span>
+        </a>
     </div>
+
+    <!--
+        <div class="list-group">
+            <a routerLink="/timeliste/{{timetrack.id}}"
+            class="list-group-item list-group-item-action" 
+            *ngFor="let timetrack of timetrackinglist" 
+            (click)="onSelect(timetrack)" 
+            [class.text-primary]="timetrack === selectedTimetrack">
+                {{ timetrack.note }} <span class="badge badge-primary float-right">{{ timetrack.id }}</span>
+            </a>
+        </div>
+    -->
+
+
 </div>
