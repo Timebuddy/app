@@ -18,11 +18,15 @@ export class TimetrackingDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private timetrackingService: TimetrackService,
-    private location: Location
+    private timetrackingService: TimetrackService
+    // private location: Location
   ) { }
 
   ngOnInit() {
+    this.timetrackingService.getTimetracking();
+  }
+
+  getTimetrack(): void {
     const id = +this.route.snapshot.paramMap.get('id'); // +this... => parser som integer
     this.timetrackingService.getTimetrack(id)
     .subscribe(timetrack => this.timetrack = timetrack);

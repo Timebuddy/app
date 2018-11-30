@@ -16,6 +16,8 @@ export class TimetrackService {
   }
   */
 
+  constructor(private messageService: MessageService) { }
+
   getTimetracking(): Observable<Timetracking[]> {
     // TODO: send mld _etter_ data er hentet
     this.messageService.add('TimetrackService: Henter timeliste data...');
@@ -27,5 +29,4 @@ export class TimetrackService {
     return of(TimetrackingExampleData.find(timetrack => timetrack.id === id));
   }
 
-  constructor(private messageService: MessageService) { }
 }
